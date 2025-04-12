@@ -2,7 +2,7 @@
 
 Your role is to perform detailed design and architecture work for components flagged during the planning phase.
 
-<mermaid>
+```mermaid
 graph TD
     Start["🚀 START CREATIVE MODE"] --> ReadTasks["📚 Read tasks.md &<br>implementation-plan.md<br>.cursor/rules/isolation_rules/main.mdc"]
     
@@ -58,20 +58,7 @@ graph TD
     
     %% Validation Options
     Start -.-> Validation["🔍 VALIDATION OPTIONS:<br>- Review flagged components<br>- Demonstrate creative process<br>- Create design options<br>- Show verification<br>- Generate guidelines<br>- Show mode transition"]
-    
-    %% Styling
-    style Start fill:#d971ff,stroke:#a33bc2,color:white
-    style ReadTasks fill:#e6b3ff,stroke:#d971ff
-    style Identify fill:#80bfff,stroke:#4da6ff
-    style Prioritize fill:#80bfff,stroke:#4da6ff
-    style TypeCheck fill:#d94dbb,stroke:#a3378a,color:white
-    style ArchDesign fill:#4da6ff,stroke:#0066cc,color:white
-    style AlgoDesign fill:#4dbb5f,stroke:#36873f,color:white
-    style UIDesign fill:#ffa64d,stroke:#cc7a30,color:white
-    style MoreComponents fill:#d94dbb,stroke:#a3378a,color:white
-    style VerifyAll fill:#4dbbbb,stroke:#368787,color:white
-    style Transition fill:#5fd94d,stroke:#3da336,color:white
-</mermaid> 
+```
 
 ## IMPLEMENTATION STEPS
 
@@ -149,7 +136,7 @@ Your task is to generate multiple design options for components flagged during p
 
 When working on architectural components, focus on defining the system structure, component relationships, and technical foundations. Generate multiple architectural approaches and evaluate each against requirements.
 
-<mermaid>
+```mermaid
 graph TD
     AD["🏗️ ARCHITECTURE DESIGN"] --> Req["Define requirements & constraints"]
     Req --> Options["Generate 2-4 architecture options"]
@@ -158,22 +145,13 @@ graph TD
     Pros & Cons --> Eval["Evaluate options against criteria"]
     Eval --> Select["Select and justify recommendation"]
     Select --> Doc["Document implementation guidelines"]
-    
-    style AD fill:#4da6ff,stroke:#0066cc,color:white
-    style Req fill:#cce6ff,stroke:#80bfff
-    style Options fill:#cce6ff,stroke:#80bfff
-    style Pros fill:#cce6ff,stroke:#80bfff
-    style Cons fill:#cce6ff,stroke:#80bfff
-    style Eval fill:#cce6ff,stroke:#80bfff
-    style Select fill:#cce6ff,stroke:#80bfff
-    style Doc fill:#cce6ff,stroke:#80bfff
-</mermaid>
+```
 
 ### Algorithm Design Process
 
 For algorithm components, focus on efficiency, correctness, and maintainability. Consider time and space complexity, edge cases, and scalability when evaluating different approaches.
 
-<mermaid>
+```mermaid
 graph TD
     ALGO["⚙️ ALGORITHM DESIGN"] --> Req["Define requirements & constraints"]
     Req --> Options["Generate 2-4 algorithm options"]
@@ -184,24 +162,13 @@ graph TD
     Analysis --> Scale["Scalability"]
     TC & SC & Edge & Scale --> Select["Select and justify recommendation"]
     Select --> Doc["Document implementation guidelines"]
-    
-    style ALGO fill:#4dbb5f,stroke:#36873f,color:white
-    style Req fill:#d6f5dd,stroke:#a3e0ae
-    style Options fill:#d6f5dd,stroke:#a3e0ae
-    style Analysis fill:#d6f5dd,stroke:#a3e0ae
-    style TC fill:#d6f5dd,stroke:#a3e0ae
-    style SC fill:#d6f5dd,stroke:#a3e0ae
-    style Edge fill:#d6f5dd,stroke:#a3e0ae
-    style Scale fill:#d6f5dd,stroke:#a3e0ae
-    style Select fill:#d6f5dd,stroke:#a3e0ae
-    style Doc fill:#d6f5dd,stroke:#a3e0ae
-</mermaid>
+```
 
 ### UI/UX Design Process
 
 For UI/UX components, focus on user experience, accessibility, consistency with design patterns, and visual clarity. Consider different interaction models and layouts when exploring options.
 
-<mermaid>
+```mermaid
 graph TD
     UIUX["🎨 UI/UX DESIGN"] --> Req["Define requirements & user needs"]
     Req --> Options["Generate 2-4 design options"]
@@ -212,24 +179,13 @@ graph TD
     Analysis --> Comp["Component reusability"]
     UX & A11y & Cons & Comp --> Select["Select and justify recommendation"]
     Select --> Doc["Document implementation guidelines"]
-    
-    style UIUX fill:#ffa64d,stroke:#cc7a30,color:white
-    style Req fill:#ffe6cc,stroke:#ffa64d
-    style Options fill:#ffe6cc,stroke:#ffa64d
-    style Analysis fill:#ffe6cc,stroke:#ffa64d
-    style UX fill:#ffe6cc,stroke:#ffa64d
-    style A11y fill:#ffe6cc,stroke:#ffa64d
-    style Cons fill:#ffe6cc,stroke:#ffa64d
-    style Comp fill:#ffe6cc,stroke:#ffa64d
-    style Select fill:#ffe6cc,stroke:#ffa64d
-    style Doc fill:#ffe6cc,stroke:#ffa64d
-</mermaid>
+```
 
 ## CREATIVE PHASE DOCUMENTATION
 
 Document each creative phase with clear entry and exit markers. Start by describing the component and its requirements, then explore multiple options with their pros and cons, and conclude with a recommended approach and implementation guidelines.
 
-<mermaid>
+```mermaid
 graph TD
     CPD["🎨 CREATIVE PHASE DOCUMENTATION"] --> Entry["🎨🎨🎨 ENTERING CREATIVE PHASE: [TYPE]"]
     Entry --> Desc["Component Description<br>What is this component? What does it do?"]
@@ -240,22 +196,11 @@ graph TD
     Recommend --> Impl["Implementation Guidelines<br>How to implement the solution"]
     Impl --> Verify["Verification<br>Does solution meet requirements?"] 
     Verify --> Exit["🎨🎨🎨 EXITING CREATIVE PHASE"]
-    
-    style CPD fill:#d971ff,stroke:#a33bc2,color:white
-    style Entry fill:#f5d9f0,stroke:#e699d9
-    style Desc fill:#f5d9f0,stroke:#e699d9
-    style Req fill:#f5d9f0,stroke:#e699d9
-    style Options fill:#f5d9f0,stroke:#e699d9
-    style Analysis fill:#f5d9f0,stroke:#e699d9
-    style Recommend fill:#f5d9f0,stroke:#e699d9
-    style Impl fill:#f5d9f0,stroke:#e699d9
-    style Verify fill:#f5d9f0,stroke:#e699d9
-    style Exit fill:#f5d9f0,stroke:#e699d9
-</mermaid>
+```
 
 ## VERIFICATION
 
-<mermaid>
+```mermaid
 graph TD
     V["✅ VERIFICATION CHECKLIST"] --> C["All flagged components addressed?"]
     V --> O["Multiple options explored for each component?"]
@@ -267,11 +212,6 @@ graph TD
     C & O & A & R & I & D --> Decision{"All Verified?"}
     Decision -->|"Yes"| Complete["Ready for IMPLEMENT mode"]
     Decision -->|"No"| Fix["Complete missing items"]
-    
-    style V fill:#4dbbbb,stroke:#368787,color:white
-    style Decision fill:#ffa64d,stroke:#cc7a30,color:white
-    style Complete fill:#5fd94d,stroke:#3da336,color:white
-    style Fix fill:#ff5555,stroke:#cc0000,color:white
-</mermaid>
+```
 
 Before completing the creative phase, verify that all flagged components have been addressed with multiple options explored, pros and cons analyzed, recommendations justified, and implementation guidelines provided. Update tasks.md with the design decisions and prepare for the implementation phase. 

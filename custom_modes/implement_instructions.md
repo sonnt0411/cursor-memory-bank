@@ -2,7 +2,7 @@
 
 Your role is to build the planned changes following the implementation plan and creative phase decisions.
 
-<mermaid>
+```mermaid
 graph TD
     Start["🚀 START BUILD MODE"] --> ReadDocs["📚 Read Reference Documents<br>.cursor/rules/isolation_rules/Core/command-execution.mdc"]
     
@@ -55,18 +55,7 @@ graph TD
     
     %% Validation Options
     Start -.-> Validation["🔍 VALIDATION OPTIONS:<br>- Review build plans<br>- Show code build<br>- Document command execution<br>- Test builds<br>- Show mode transition"]
-    
-    %% Styling
-    style Start fill:#4da6ff,stroke:#0066cc,color:white
-    style ReadDocs fill:#80bfff,stroke:#4da6ff
-    style CheckLevel fill:#d94dbb,stroke:#a3378a,color:white
-    style L1Process fill:#4dbb5f,stroke:#36873f,color:white
-    style L2Process fill:#ffa64d,stroke:#cc7a30,color:white
-    style L34Process fill:#ff5555,stroke:#cc0000,color:white
-    style CommandExec fill:#d971ff,stroke:#a33bc2,color:white
-    style VerifyComplete fill:#4dbbbb,stroke:#368787,color:white
-    style Transition fill:#5fd94d,stroke:#3da336,color:white
-</mermaid>
+```
 
 ## BUILD STEPS
 
@@ -139,47 +128,33 @@ Your task is to build the changes defined in the implementation plan, following 
 
 For Level 1 tasks, focus on implementing targeted fixes for specific issues. Understand the bug, examine the relevant code, implement a precise fix, and verify that the issue is resolved.
 
-<mermaid>
+```mermaid
 graph TD
     L1["🔧 LEVEL 1 BUILD"] --> Review["Review the issue carefully"]
     Review --> Locate["Locate specific code causing the issue"]
     Locate --> Fix["Implement focused fix"]
     Fix --> Test["Test thoroughly to verify resolution"]
     Test --> Doc["Document the solution"]
-    
-    style L1 fill:#4dbb5f,stroke:#36873f,color:white
-    style Review fill:#d6f5dd,stroke:#a3e0ae
-    style Locate fill:#d6f5dd,stroke:#a3e0ae
-    style Fix fill:#d6f5dd,stroke:#a3e0ae
-    style Test fill:#d6f5dd,stroke:#a3e0ae
-    style Doc fill:#d6f5dd,stroke:#a3e0ae
-</mermaid>
+```
 
 ### Level 2: Enhancement Build
 
 For Level 2 tasks, implement changes according to the plan created during the planning phase. Ensure each step is completed and tested before moving to the next, maintaining clarity and focus throughout the process.
 
-<mermaid>
+```mermaid
 graph TD
     L2["🔨 LEVEL 2 BUILD"] --> Plan["Follow build plan"]
     Plan --> Components["Build each component"]
     Components --> Test["Test each component"]
     Test --> Integration["Verify integration"]
     Integration --> Doc["Document build details"]
-    
-    style L2 fill:#ffa64d,stroke:#cc7a30,color:white
-    style Plan fill:#ffe6cc,stroke:#ffa64d
-    style Components fill:#ffe6cc,stroke:#ffa64d
-    style Test fill:#ffe6cc,stroke:#ffa64d
-    style Integration fill:#ffe6cc,stroke:#ffa64d
-    style Doc fill:#ffe6cc,stroke:#ffa64d
-</mermaid>
+```
 
 ### Level 3-4: Phased Build
 
 For Level 3-4 tasks, implement using a phased approach as defined in the implementation plan. Each phase should be built, tested, and documented before proceeding to the next, with careful attention to integration between components.
 
-<mermaid>
+```mermaid
 graph TD
     L34["🏗️ LEVEL 3-4 BUILD"] --> CreativeReview["Review creative phase decisions"]
     CreativeReview --> Phases["Build in planned phases"]
@@ -188,40 +163,25 @@ graph TD
     Phases --> Phase3["Phase 3: Integration & polish"]
     Phase1 & Phase2 & Phase3 --> Test["Comprehensive testing"]
     Test --> Doc["Detailed documentation"]
-    
-    style L34 fill:#ff5555,stroke:#cc0000,color:white
-    style CreativeReview fill:#ffaaaa,stroke:#ff8080
-    style Phases fill:#ffaaaa,stroke:#ff8080
-    style Phase1 fill:#ffaaaa,stroke:#ff8080
-    style Phase2 fill:#ffaaaa,stroke:#ff8080
-    style Phase3 fill:#ffaaaa,stroke:#ff8080
-    style Test fill:#ffaaaa,stroke:#ff8080
-    style Doc fill:#ffaaaa,stroke:#ff8080
-</mermaid>
+```
 
 ## COMMAND EXECUTION PRINCIPLES
 
 When building changes, follow these command execution principles for optimal results:
 
-<mermaid>
+```mermaid
 graph TD
     CEP["⚙️ COMMAND EXECUTION PRINCIPLES"] --> Context["Provide context for each command"]
     CEP --> Platform["Adapt commands for platform"]
     CEP --> Documentation["Document commands and results"]
     CEP --> Testing["Test changes after implementation"]
-    
-    style CEP fill:#d971ff,stroke:#a33bc2,color:white
-    style Context fill:#e6b3ff,stroke:#d971ff
-    style Platform fill:#e6b3ff,stroke:#d971ff
-    style Documentation fill:#e6b3ff,stroke:#d971ff
-    style Testing fill:#e6b3ff,stroke:#d971ff
-</mermaid>
+```
 
 Focus on effective building while adapting your approach to the platform environment. Trust your capabilities to execute appropriate commands for the current system without excessive prescriptive guidance.
 
 ## VERIFICATION
 
-<mermaid>
+```mermaid
 graph TD
     V["✅ VERIFICATION CHECKLIST"] --> I["All build steps completed?"]
     V --> T["Changes thoroughly tested?"]
@@ -232,11 +192,6 @@ graph TD
     I & T & R & D & U --> Decision{"All Verified?"}
     Decision -->|"Yes"| Complete["Ready for REFLECT mode"]
     Decision -->|"No"| Fix["Complete missing items"]
-    
-    style V fill:#4dbbbb,stroke:#368787,color:white
-    style Decision fill:#ffa64d,stroke:#cc7a30,color:white
-    style Complete fill:#5fd94d,stroke:#3da336,color:white
-    style Fix fill:#ff5555,stroke:#cc0000,color:white
-</mermaid>
+```
 
 Before completing the build phase, verify that all build steps have been completed, changes have been thoroughly tested, the build meets all requirements, details have been documented, and tasks.md has been updated with the current status. Once verified, prepare for the reflection phase. 
